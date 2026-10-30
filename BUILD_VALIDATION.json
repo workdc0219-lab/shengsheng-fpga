@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-30",
+  "toolchain": "Tang Dynasty 6.2.168116",
+  "entry_sha256": "CBBF5E15C8794211771D95D6AEAB11C5B0A5ED68A9CB512D24AB3E16CB51236E",
+  "bootstrap_sha256": "1E7DC4EA94EBBB08E2A242A1F42513FADD4B26C4D756F53A01A857FDD1CF7667",
+  "authenticated_build_inputs_unchanged": 163,
+  "teacher": {
+    "status": "PASS",
+    "mode": "synthesis_place_route_bitgen_original_strict_gate",
+    "place_seed": 1,
+    "timing_coverage_percent": 99.99,
+    "timing_ns": {
+      "SWNS": 5.145,
+      "STNS": 0,
+      "HWNS": 0.004,
+      "HTNS": 0
+    },
+    "violation_report_verified": true,
+    "tmds_delays_ns": {
+      "HDMI_CLK_P": 2.573,
+      "HDMI_D0_P": 2.573,
+      "HDMI_D1_P": 2.573,
+      "HDMI_D2_P": 2.573
+    },
+    "rebuilt_bit_sha256": "942EA428D1C84311D0CD39BE004F75FC0B2DD7035E0715F5AFE0CCC7FC0684C6",
+    "bit_byte_identical_to_supplied": false
+  },
+  "student": {
+    "status": "PASS",
+    "mode": "sealed_database_export_no_synthesis_or_reroute",
+    "fuse_comparison": {
+      "exact_bytes_equal": true,
+      "binary_data_equal": true,
+      "reference_sha256": "9ED4589F3EDEC6B9E3452A6E13B25ABF1795DEBD61B69DF3947981A45CBAA457",
+      "candidate_sha256": "9ED4589F3EDEC6B9E3452A6E13B25ABF1795DEBD61B69DF3947981A45CBAA457",
+      "reference_bits": 4900028,
+      "candidate_bits": 4900028
+    },
+    "exported_bit_sha256": "8CE89CE3F2F5A251179A06061DD6336260A210DE2500E47E3AD884A894EDAD4F",
+    "bit_byte_identical_to_supplied": false
+  },
+  "simulation": {
+    "status": "PASS",
+    "cases": 7
+  },
+  "supplied_bitstreams_replaced": false,
+  "hardware_accessed": false
+}

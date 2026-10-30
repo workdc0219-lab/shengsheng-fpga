@@ -1,0 +1,70 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Mon Oct 26 22:57:12 2026
+
+Top Model           : shengsheng_board_a_top
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 99.99%
+Constraint File     : <WORKSPACE>/2026_topic1_shengsheng_controls_r1/teacher_A/board_a/constraints/board_a_top.sdc;
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 65536 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+
+Timing Status
+--------------------
+	SWNS: 0.000ns, STNS: 0.000ns
+	HWNS: 0.000ns, HTNS: 0.000ns
+	Period Check WNS: 0.000ns
+
+
+Clock Summary
+--------------------
+
+       Clock-Id:       C-Freq       Fanout   Clock-Name
+--------------------------------------------------------------------------------
+           clk0:       25.000         5651   video_clk
+           clk1:      125.000           31   pixel_clk_5x
+           clk2:       12.500           15   adc_clk
+           clk3:       50.000            3   sys_clk
+--------------------------------------------------------------------------------
+
+       Name            Type         Rise(ns)   Fall(ns)          C-Period(ns)     C-Freq(MHz)          R-Period(ns)     R-Freq(MHz)         SWNS(ns)   STNS(ns)         HWNS(ns)   HTNS(ns)         Skew(ns)           Fanout        Max-Level        CC-From    CC-To
+       clk0           local            0.000     20.000                40.000          25.000                40.000          25.000            0.000      0.000            0.000      0.000            0.480             5651               23             no       no
+       clk1           local            0.000      4.000                 8.000         125.000                 8.000         125.000            0.000      0.000            0.000      0.000            0.254               31                1             no       no
+       clk2           local            0.000     40.000                80.000          12.500                80.000          12.500            0.000      0.000            0.000      0.000            0.254               15                3             no       no
+       clk3           local            0.000     10.000                20.000          50.000                20.000          50.000            0.000      0.000            0.000      0.000            0.000                3                0             no       no
+
+Notes
+----------
+C-Period  :  constraint period
+C-Freq    :  constraint freq
+R-Period  :  report min period
+R-Freq    :  report fmax
+CC-From   :  has path(s) from cross-domain clock
+CC-To     :  has path(s) to cross-domain clock
+
+
+*   Clock R-Period data only takes intra-clock timing. SWNS/STNS/HWNS/HTNS take both intra-clock and inter-clock timing.
+*   If there is mismatch between R-Period and SWNS, check inter-clock timing of this clock as capture clock.
+*   SWNS/STNS/HWNS/HTNS of timing exception (SMCP/SMD) only counted in global Timing Status, not counted in Clock Summary.
+
+Intra clock domain timing
+--------------------------------------------------
+
+Inter clock domain timing
+--------------------------------------------------
+
+IP timing
+--------------------------------------------------

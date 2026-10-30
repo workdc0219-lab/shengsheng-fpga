@@ -1,0 +1,173 @@
+{
+  "schema": "controls_student_portable_materials/v1",
+  "candidate_db_sha256": "A79315D9825A88CAE151739381D3A3AFFBA5E27379B783101B7E6AAB4FACACC9",
+  "original_stage1_db_sha256": "606EF84D275E617B8F22A1916975BC7BE9A91ECF60C25C76F1092A8ADEC686E7",
+  "candidate_bit_sha256": "3BFB9883867FB6C69A715D842745E3B474EB3E545ACEE3A4226CDAA41248EDA6",
+  "reference_export_tcl": {
+    "source_path": "2026_topic1_shengsheng_controls_r1/tools/export_student_candidate.tcl",
+    "sha256": "A2B40706D3F966B5B7A13107276272D7CB62A9445D1CDC8CE7A85B1AF9CCFDBE"
+  },
+  "portable_tcl_td_executed": false,
+  "byte_identical_reexport_verified": false,
+  "materials": [
+    {
+      "name": "stage1_shengsheng_board_b_pr.db",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_stage1/shengsheng_board_b_pr.db.gz",
+      "package_path": "materials/stage1_shengsheng_board_b_pr.db.gz",
+      "encoding": "gzip",
+      "bytes": 10660884,
+      "sha256": "8F4A87B74F480B5E224435C31A35FDD2CEC15F31ADD85332D67BC07DEB964DE0",
+      "raw_bytes": 13336720,
+      "raw_sha256": "606EF84D275E617B8F22A1916975BC7BE9A91ECF60C25C76F1092A8ADEC686E7",
+      "extracted_path": "stage1/shengsheng_board_b_pr.db"
+    },
+    {
+      "name": "stage1_controls_student.pnl",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_stage1/controls_student.pnl.gz",
+      "package_path": "materials/stage1_controls_student.pnl.gz",
+      "encoding": "gzip",
+      "bytes": 2750807,
+      "sha256": "91630BEFAA572A3F3F8EC0EA009CDC554613B4332F8724FA844B64E3CFDF69D3",
+      "raw_bytes": 22119683,
+      "raw_sha256": "A05838F37B9D8FBC4BA1E0942779FD81994FAF9FC0B1C2F302486501EE71966C",
+      "extracted_path": "stage1/controls_student.pnl"
+    },
+    {
+      "name": "stage1_controls_student_out.v",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_stage1/controls_student_out.v.gz",
+      "package_path": "materials/stage1_controls_student_out.v.gz",
+      "encoding": "gzip",
+      "bytes": 784285,
+      "sha256": "B0A04ED603C1206E15BA50E207F2AD8B7CD6D328F4406FE4A56AF28343A7FD34",
+      "raw_bytes": 11052430,
+      "raw_sha256": "4FC347743E7E146014F6FFD51C2021580983CB20D6951FCE48FB5F085B0A137C",
+      "extracted_path": "stage1/controls_student_out.v"
+    },
+    {
+      "name": "stage1_final_timing.rpt",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_stage1/final_timing.rpt.gz",
+      "package_path": "materials/stage1_final_timing.rpt.gz",
+      "encoding": "gzip",
+      "bytes": 38343,
+      "sha256": "9FB42581EF26ED91B8F21A1D3B04EF40B355F21831362AC2EB567D83A7314B12",
+      "raw_bytes": 1042969,
+      "raw_sha256": "41D565177E3BA6798CAB5CCA7E53864AE1D31A765230229FE71AD3FCC82F19F7",
+      "extracted_path": "stage1/final_timing.rpt",
+      "source_original_gzip": {
+        "bytes": 38380,
+        "sha256": "731975378D9E175C9BC8B634D7557C692079ACBA9B8E95991ADE0744E86F30EB"
+      },
+      "source_original_raw": {
+        "bytes": 1043012,
+        "sha256": "D3A13A0E3DC999B9E3B5173718D941514A2FC4D279A4081DF386C70B5277B424"
+      },
+      "transformation": "Derived public text report: path redaction only, then gzip mtime=0. Not byte-identical to the sealed original."
+    },
+    {
+      "name": "stage1_final_timing_violations.rpt",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_stage1/final_timing_violations.rpt.gz",
+      "package_path": "materials/stage1_final_timing_violations.rpt.gz",
+      "encoding": "gzip",
+      "bytes": 1113,
+      "sha256": "5F8E16A34FC5DE64D78A274DA6A8FC5CCAA747AFB5B82F9AE9249A697D4966E9",
+      "raw_bytes": 3848,
+      "raw_sha256": "CC3A34D216AB666E2C8ED5C2994DE8F8D5979A4950C36460F0AC834342CE594E",
+      "extracted_path": "stage1/final_timing_violations.rpt",
+      "source_original_gzip": {
+        "bytes": 1140,
+        "sha256": "74A42B8C0F30A1879BEE9321BCCC9FBF0DC636CD0A595EB1BAA64884A7229CC7"
+      },
+      "source_original_raw": {
+        "bytes": 3891,
+        "sha256": "CF328AE2D8B5EBA1EB4A97ECEC8C3CC319F45CF0BFD0F709994E656B872B8766"
+      },
+      "transformation": "Derived public text report: path redaction only, then gzip mtime=0. Not byte-identical to the sealed original."
+    },
+    {
+      "name": "stage1_shengsheng_board_b_exception.timing",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_stage1/shengsheng_board_b_exception.timing.gz",
+      "package_path": "materials/stage1_shengsheng_board_b_exception.timing.gz",
+      "encoding": "gzip",
+      "bytes": 5003,
+      "sha256": "854AF2AF8515D042CE2282BEEA93778893CD72342AF6D86512CB46C5AEC49096",
+      "raw_bytes": 115708,
+      "raw_sha256": "9322BAA2DB64CDDBA58016B95DB633784233AE88B6EBB039E8CDC8527112C25D",
+      "extracted_path": "stage1/shengsheng_board_b_exception.timing",
+      "source_original_gzip": {
+        "bytes": 5033,
+        "sha256": "69ED3719348D538E5EE60C88A7034349B267FAB054D90ECB8F4EA0AE4F2FAF42"
+      },
+      "source_original_raw": {
+        "bytes": 115751,
+        "sha256": "277211C3A0BB0D5BE4E0E252EE8F6B227A1E20DA2BDB51617AFFBD0BFB0CF052"
+      },
+      "transformation": "Derived public text report: path redaction only, then gzip mtime=0. Not byte-identical to the sealed original."
+    },
+    {
+      "name": "stage1_shengsheng_board_b_phy.area",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_stage1/shengsheng_board_b_phy.area.gz",
+      "package_path": "materials/stage1_shengsheng_board_b_phy.area.gz",
+      "encoding": "gzip",
+      "bytes": 5106,
+      "sha256": "7C3054B9D16F26A7F035C2D12770ACA0706E7A1BF5ED9425F71C94436F47B73F",
+      "raw_bytes": 39186,
+      "raw_sha256": "8642D58713CA6851A21ABD7D7734300ED4FB69DB9E6B67770C5CD855E83BE1B2",
+      "extracted_path": "stage1/shengsheng_board_b_phy.area"
+    },
+    {
+      "name": "route_only_before.pnl",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_route_only/archive/before.pnl.gz",
+      "package_path": "materials/route_only_before.pnl.gz",
+      "encoding": "gzip",
+      "bytes": 2750807,
+      "sha256": "98B77384E9FC604A6A80C6BF7C70F8C27035950A26CF557B229FB84E7D535B89",
+      "raw_bytes": 22119683,
+      "raw_sha256": "EA5F0F3331D5BA524962921224B1786F2B8B70814A6872CCB7F34C2CC16DF7E7",
+      "extracted_path": "route_only/before.pnl"
+    },
+    {
+      "name": "route_only_after.pnl",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_route_only/archive/after.pnl.gz",
+      "package_path": "materials/route_only_after.pnl.gz",
+      "encoding": "gzip",
+      "bytes": 2750806,
+      "sha256": "33AD33ACB752E5EFE557F74E4F9EB12B395B0B2A21AB70FE077FA552C6923562",
+      "raw_bytes": 22119654,
+      "raw_sha256": "CAE003C47F0BE12477E2DCEAA0B1EBC7473C5DAF78CD5359E6027D86CA64D265",
+      "extracted_path": "route_only/after.pnl"
+    },
+    {
+      "name": "route_only_after.v",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_route_only/archive/after.v.gz",
+      "package_path": "materials/route_only_after.v.gz",
+      "encoding": "gzip",
+      "bytes": 784287,
+      "sha256": "1477FF2577F2363EBAB073422273F06D377191056D4BC45AE63EC0A68E481A67",
+      "raw_bytes": 11052430,
+      "raw_sha256": "B718F17A2879FFDD8CEE970F1A72724957CF96EDCECB84BE5FF5BD119E411679",
+      "extracted_path": "route_only/after.v"
+    },
+    {
+      "name": "route_only_student_route_only_pr.db",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_seed1_route_only/archive/student_route_only_pr.db.gz",
+      "package_path": "materials/route_only_student_route_only_pr.db.gz",
+      "encoding": "gzip",
+      "bytes": 10660774,
+      "sha256": "A6FD81055C4C10AC5E82B314C41828EC8DAE0CCEC2D610C28370C86A1E08A56B",
+      "raw_bytes": 13336664,
+      "raw_sha256": "A79315D9825A88CAE151739381D3A3AFFBA5E27379B783101B7E6AAB4FACACC9",
+      "extracted_path": "route_only/student_route_only_pr.db"
+    },
+    {
+      "name": "original_student_fuse",
+      "source_path": "2026_topic1_shengsheng_controls_r1/evidence/student_final_export/student.fuse",
+      "package_path": "materials/original_student.fuse",
+      "encoding": "raw",
+      "bytes": 4902546,
+      "sha256": "9ED4589F3EDEC6B9E3452A6E13B25ABF1795DEBD61B69DF3947981A45CBAA457",
+      "raw_bytes": 4902546,
+      "raw_sha256": "9ED4589F3EDEC6B9E3452A6E13B25ABF1795DEBD61B69DF3947981A45CBAA457",
+      "extracted_path": "reference/original_student.fuse"
+    }
+  ]
+}

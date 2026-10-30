@@ -1,0 +1,666 @@
+{
+  "result": "CONFIRMED_ROUTE_BRANCH_SCOPE_NOT_PHYSICAL_MUX_BEHAVIOR",
+  "target": {
+    "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_24",
+    "source": "u_seg7/mux5_syn_316.q[0]",
+    "feedthrough": "x19y6_3(a1.f1)",
+    "functional_cell": "u_key_router/key3_hold_count_reg[24]_syn_4",
+    "all_sr_endpoints": [
+      {
+        "route_endpoint": "x15y8.slice[2].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_1_reg[23]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x15y8.slice[3].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/S_acr_cts_lock_reg[17]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x15y9.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_1_reg[21]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y10.slice[1].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH1_D0_shift_reg[11]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y11.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[23]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y6.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_1_reg[20]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": false
+      },
+      {
+        "route_endpoint": "x17y7.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH2_D0_shift_reg[28]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y7.slice[1].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH2_D0_shift_reg[31]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y7.slice[2].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_1_reg[22]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y7.slice[3].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_1_reg[17]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y8.slice[0].sr",
+        "cell": "u_media_tone/clamped[3]_syn_7",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y8.slice[1].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[30]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y8.slice[3].sr",
+        "cell": "u_media_tone/clamped[6]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x17y9.slice[1].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH1_D0_shift_reg[14]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y10.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[20]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y6.slice[3].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_1_reg[8]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y7.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[59]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y7.slice[1].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/O_video_source_pause_reg_syn_8",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y7.slice[2].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH2_D0_shift_reg[29]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y7.slice[3].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[57]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y8.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/O_video_locked_reg_syn_8",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x18y8.slice[1].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[27]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x19y10.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[17]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x19y10.slice[1].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH1_D0_shift_reg[9]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x19y10.slice[2].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[22]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x19y10.slice[3].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH1_D0_shift_reg[12]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      },
+      {
+        "route_endpoint": "x19y11.slice[0].sr",
+        "cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[25]_syn_4",
+        "reachable_from_source": true,
+        "downstream_of_key_feedthrough": true
+      }
+    ],
+    "downstream_count": 26,
+    "unaffected_count": 1,
+    "route_edges": [
+      [
+        "x17y8.slice[2].q[0]",
+        "x17y8.q4"
+      ],
+      [
+        "x17y8.q4",
+        "x17y8.a3"
+      ],
+      [
+        "x17y8.a3",
+        "x17y8.f3"
+      ],
+      [
+        "x17y8.f3",
+        "x17y8.s1beg2"
+      ],
+      [
+        "x17y7.s1end2",
+        "x17y7.n1beg2"
+      ],
+      [
+        "x17y8.n1end2",
+        "x17y8.e6beg1"
+      ],
+      [
+        "x20y8.e6mid1",
+        "x20y8.s2beg1"
+      ],
+      [
+        "x20y6.s2end1",
+        "x20y6.w2beg1"
+      ],
+      [
+        "x19y6.w2mid1",
+        "x18y6.w2beg3"
+      ],
+      [
+        "x19y6.w2mid1",
+        "x19y6.a7"
+      ],
+      [
+        "x17y6.w2mid3",
+        "x17y6.sr0"
+      ],
+      [
+        "x17y6.sr0",
+        "x17y6.slice[0].sr"
+      ],
+      [
+        "x19y6.a7",
+        "x19y6.f7"
+      ],
+      [
+        "x19y6.f7",
+        "x19y6.w2beg3"
+      ],
+      [
+        "x19y6.f7",
+        "x19y6.n2beg3"
+      ],
+      [
+        "x18y6.w2mid3",
+        "x18y6.local6"
+      ],
+      [
+        "x18y6.local6",
+        "x18y6.sr3"
+      ],
+      [
+        "x18y6.sr3",
+        "x18y6.slice[3].sr"
+      ],
+      [
+        "x19y7.n2mid3",
+        "x19y7.w2beg3"
+      ],
+      [
+        "x18y7.w2mid3",
+        "x18y7.sr0"
+      ],
+      [
+        "x18y7.w2mid3",
+        "x18y7.sr1"
+      ],
+      [
+        "x18y7.w2mid3",
+        "x17y7.sr0"
+      ],
+      [
+        "x18y7.w2mid3",
+        "x17y7.sr1"
+      ],
+      [
+        "x18y7.w2mid3",
+        "x18y7.local6"
+      ],
+      [
+        "x18y7.w2mid3",
+        "x17y7.local6"
+      ],
+      [
+        "x18y7.w2mid3",
+        "x17y7.n2beg3"
+      ],
+      [
+        "x18y7.sr0",
+        "x18y7.slice[0].sr"
+      ],
+      [
+        "x18y7.sr1",
+        "x18y7.slice[1].sr"
+      ],
+      [
+        "x17y7.sr0",
+        "x17y7.slice[0].sr"
+      ],
+      [
+        "x17y7.sr1",
+        "x17y7.slice[1].sr"
+      ],
+      [
+        "x18y7.local6",
+        "x18y7.sr2"
+      ],
+      [
+        "x18y7.local6",
+        "x18y7.sr3"
+      ],
+      [
+        "x18y7.sr2",
+        "x18y7.slice[2].sr"
+      ],
+      [
+        "x18y7.sr3",
+        "x18y7.slice[3].sr"
+      ],
+      [
+        "x17y7.local6",
+        "x17y7.sr2"
+      ],
+      [
+        "x17y7.local6",
+        "x17y7.sr3"
+      ],
+      [
+        "x17y7.sr2",
+        "x17y7.slice[2].sr"
+      ],
+      [
+        "x17y7.sr3",
+        "x17y7.slice[3].sr"
+      ],
+      [
+        "x17y8.n2mid3",
+        "x17y8.sr0"
+      ],
+      [
+        "x17y8.n2mid3",
+        "x17y8.sr1"
+      ],
+      [
+        "x17y8.n2mid3",
+        "x17y9.sr1"
+      ],
+      [
+        "x17y8.n2mid3",
+        "x17y9.n1beg2"
+      ],
+      [
+        "x17y8.sr0",
+        "x17y8.slice[0].sr"
+      ],
+      [
+        "x17y8.sr1",
+        "x17y8.slice[1].sr"
+      ],
+      [
+        "x17y9.sr1",
+        "x17y9.slice[1].sr"
+      ],
+      [
+        "x17y10.n1end2",
+        "x17y10.n2beg3"
+      ],
+      [
+        "x17y11.n2mid3",
+        "x17y11.sr0"
+      ],
+      [
+        "x17y11.n2mid3",
+        "x17y11.e2beg3"
+      ],
+      [
+        "x17y11.sr0",
+        "x17y11.slice[0].sr"
+      ],
+      [
+        "x18y11.e2mid3",
+        "x19y11.sr0"
+      ],
+      [
+        "x18y11.e2mid3",
+        "x18y11.s2beg3"
+      ],
+      [
+        "x19y11.sr0",
+        "x19y11.slice[0].sr"
+      ],
+      [
+        "x18y10.s2mid3",
+        "x18y10.sr0"
+      ],
+      [
+        "x18y10.s2mid3",
+        "x18y10.e2beg3"
+      ],
+      [
+        "x18y10.s2mid3",
+        "x18y10.w2beg3"
+      ],
+      [
+        "x18y10.s2mid3",
+        "x18y9.s2beg3"
+      ],
+      [
+        "x18y10.sr0",
+        "x18y10.slice[0].sr"
+      ],
+      [
+        "x19y10.e2mid3",
+        "x19y10.sr0"
+      ],
+      [
+        "x19y10.e2mid3",
+        "x19y10.sr1"
+      ],
+      [
+        "x19y10.sr0",
+        "x19y10.slice[0].sr"
+      ],
+      [
+        "x19y10.sr1",
+        "x19y10.slice[1].sr"
+      ],
+      [
+        "x17y10.w2mid3",
+        "x17y10.sr1"
+      ],
+      [
+        "x17y10.sr1",
+        "x17y10.slice[1].sr"
+      ],
+      [
+        "x18y8.s2mid3",
+        "x18y8.sr0"
+      ],
+      [
+        "x18y8.s2mid3",
+        "x18y8.sr1"
+      ],
+      [
+        "x18y8.s2mid3",
+        "x18y8.w2beg3"
+      ],
+      [
+        "x18y8.sr0",
+        "x18y8.slice[0].sr"
+      ],
+      [
+        "x18y8.sr1",
+        "x18y8.slice[1].sr"
+      ],
+      [
+        "x17y8.w2mid3",
+        "x16y8.w2beg1"
+      ],
+      [
+        "x17y8.w2mid3",
+        "x17y8.a5"
+      ],
+      [
+        "x15y8.w2mid1",
+        "x15y8.local0"
+      ],
+      [
+        "x15y8.local0",
+        "x15y8.sr2"
+      ],
+      [
+        "x15y8.local0",
+        "x15y8.sr3"
+      ],
+      [
+        "x15y8.sr2",
+        "x15y8.slice[2].sr"
+      ],
+      [
+        "x15y8.sr3",
+        "x15y8.slice[3].sr"
+      ],
+      [
+        "x17y8.a5",
+        "x17y8.fx5"
+      ],
+      [
+        "x17y8.fx5",
+        "x17y8.w1beg1"
+      ],
+      [
+        "x17y8.fx5",
+        "x17y8.n1beg1"
+      ],
+      [
+        "x16y8.w1end1",
+        "x16y8.e2beg4"
+      ],
+      [
+        "x17y8.e2mid4",
+        "x17y8.sr3"
+      ],
+      [
+        "x17y8.e2mid4",
+        "x18y8.e2beg4"
+      ],
+      [
+        "x17y8.sr3",
+        "x17y8.slice[3].sr"
+      ],
+      [
+        "x19y8.e2mid4",
+        "x19y8.n2beg4"
+      ],
+      [
+        "x19y10.n2end4",
+        "x19y10.sr2"
+      ],
+      [
+        "x19y10.n2end4",
+        "x19y10.sr3"
+      ],
+      [
+        "x19y10.sr2",
+        "x19y10.slice[2].sr"
+      ],
+      [
+        "x19y10.sr3",
+        "x19y10.slice[3].sr"
+      ],
+      [
+        "x17y9.n1end1",
+        "x17y9.w2beg6"
+      ],
+      [
+        "x15y9.w2end6",
+        "x15y9.local7"
+      ],
+      [
+        "x15y9.local7",
+        "x15y9.sr0"
+      ],
+      [
+        "x15y9.sr0",
+        "x15y9.slice[0].sr"
+      ]
+    ],
+    "normalization": "For e/w/n/s directional tracks of length 1/2/6, normalize beg/mid/end to physical origin. Full source reachability of all 27 declared SR endpoints checks this net topology."
+  },
+  "all_reset_net_feedthroughs": [
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_10",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_13",
+      "feedthroughs": [
+        {
+          "location": "x6y1_0",
+          "pins": "b0.f0",
+          "functional_cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH1_D2_shift_reg[24]_syn_4"
+        }
+      ]
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_18",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_19",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_20",
+      "feedthroughs": [
+        {
+          "location": "x14y2_1",
+          "pins": "a0.f0",
+          "functional_cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_2_reg[60]_syn_4"
+        }
+      ]
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_21",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_22",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_23",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_24",
+      "feedthroughs": [
+        {
+          "location": "x17y8_1",
+          "pins": "a1.f1",
+          "functional_cell": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/O_BCH_block_0_reg[30]_syn_4"
+        },
+        {
+          "location": "x19y6_3",
+          "pins": "a1.f1",
+          "functional_cell": "u_key_router/key3_hold_count_reg[24]_syn_4"
+        },
+        {
+          "location": "x17y8_2",
+          "pins": "a1.fx1",
+          "functional_cell": "u_seg7/mux5_syn_316"
+        }
+      ]
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_25",
+      "feedthroughs": [
+        {
+          "location": "x23y4_0",
+          "pins": "d0.f0",
+          "functional_cell": null
+        }
+      ]
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_27",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_28",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_29",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_30",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/u_w24_d1024_fifo/I_rst_dup_11",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi14_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/u_w24_d1024_fifo/I_rst_dup_15",
+      "feedthroughs": []
+    },
+    {
+      "net": "u_hdmi_phy/u0_lane_lvds_8_1/I_rst",
+      "feedthroughs": []
+    }
+  ],
+  "key_cell_crossings": [
+    {
+      "net": "u_hdmi14_core/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_24",
+      "location": "x19y6_3",
+      "pins": "a1.f1",
+      "functional_cell": "u_key_router/key3_hold_count_reg[24]_syn_4"
+    }
+  ],
+  "limits": [
+    "PNL route topology is not a transistor-level model of F/G/E mux selection. That gate remains with native primitive simulation.",
+    "Only reset nets whose names contain I_rst were scanned for this matching pattern; this is not a whole-design shared-feedthrough audit."
+  ],
+  "sha256": {
+    "<WORKSPACE>/2026_topic1_shengsheng_sm_f1c\\evidence\\seed1_implementation_audit\\serial_capture\\original_f1.pnl.gz": "7F7FE7F4C4E5DA47420E75FA8F836EF5532571819229CEA37EDECD2BFDD56F53",
+    "<WORKSPACE>/2026_topic1_shengsheng_sm_f1c\\evidence\\seed1_implementation_audit\\probe_sync_f1_preservation.log.gz": "4C5AED4FC64E5EF14A658BA1BAA444C40D5CCB2D164602F5DD39D9FA2C9CF554"
+  }
+}

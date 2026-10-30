@@ -1,0 +1,57 @@
+# Board A constraint file (signal acquisition + feature extraction)
+# Same EG4S20 development board as the single-board design.
+# Only uses: crystal, reset, UART, LEDs, and the internal ADC (MAX9814).
+
+set_pin_assignment { sys_clk }    { LOCATION = R7;  IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment { sys_rst_n }  { LOCATION = A2;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# Board link (921600-8N1) on header J2 -- docs/13 section 3. D12/F12 are the
+# on-board CH340 pins (not on any header), so the link cannot live there.
+# Cable: A.J2-1 -> B.J2-2, A.J2-2 <- B.J2-1, J2-12 GND <-> J2-12 GND.
+set_pin_assignment { uart_tx }    { LOCATION = P4;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { uart_rx }    { LOCATION = N4;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# SW1 = teacher live demo (docs/14 section 6), same switch bank as Board B
+set_pin_assignment { demo_sw }    { LOCATION = C8;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+# SW2 (V8 F5) = teacher scope page: mic waveforms + 8-band spectrum
+set_pin_assignment { scope_sw }   { LOCATION = C7;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# Teacher console HDMI on connector A, identical to Board B (docs/14 s6)
+set_pin_assignment { HDMI_CLK_P } { LOCATION = K1;  IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment { HDMI_D0_P }  { LOCATION = F5;  IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment { HDMI_D1_P }  { LOCATION = E3;  IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+set_pin_assignment { HDMI_D2_P }  { LOCATION = B3;  IOSTANDARD = LVDS33; PULLTYPE = NONE; }
+
+set_pin_assignment { key_teacher_n } { LOCATION = B2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { key_child_n } { LOCATION = B1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# Status LEDs
+set_pin_assignment { led[0] }     { LOCATION = A4;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { led[1] }     { LOCATION = A3;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { led[2] }     { LOCATION = C10; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { led[3] }     { LOCATION = B12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+# MAX9814 child/teacher microphones use ADC_CH_2 (L10) / ADC_CH_3 (P11).
+# TN304_1.3, pp.1/3: ADC pin multiplexing is selected by EG_PHY_ADC.CHx
+# ENABLE parameters, not fabricated digital top-level ports. TIME_MUX=1
+# must enable BOTH CH2 and CH3 in mic_adc_frontend. Do not assign either
+# analogue pad to a simultaneous digital I/O. Header wiring remains a board check.
+
+# SDC timing constraints
+# create_clock -name sys_clk -period 20.000 [get_ports {sys_clk}]
+
+# Raw-audio/spectral stream to PC (921600-8N1) on the on-board CH340 TXD
+# (D12), so the PC side needs only the board's own USB cable.
+set_pin_assignment { stream_tx }  { LOCATION = D12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+# On-board U33 data flash (W25Q64), training records (docs/14 s5, S6).
+# Same wiring the single-board w25q_persistence bring-up proved on this
+# board (2026-08): U33 is the DATA flash, distinct from U39 (config).
+# Ring window in the RTL: the design only
+# touches [0x7DE000, 0x7FE000), below the single-board journal slots.
+set_pin_assignment { flash_cs_n }   { LOCATION = P8;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { flash_miso }   { LOCATION = N8;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { flash_sclk }   { LOCATION = M9;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { flash_wp_n }   { LOCATION = P9;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { flash_hold_n } { LOCATION = R9;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { flash_mosi }   { LOCATION = P7;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }

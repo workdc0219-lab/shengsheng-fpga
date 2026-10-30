@@ -1,0 +1,23 @@
+{
+  "version": 7,
+  "clock_hz": 25000000,
+  "uart": {"clks_per_bit": 27, "format": "8N1", "bit_order": "lsb_first"},
+  "frame": {"magic": [165,90], "fields": [["version",1],["type",1],["length",1],["session",2],["sequence",2],["question",2],["payload","length"],["crc",2]], "endian": "little", "max_payload": 32, "total_bytes": "13 + length"},
+  "crc": {"name": "CRC-16/CCITT-FALSE", "polynomial": 4129, "init": 65535, "refin": false, "refout": false, "xorout": 0, "coverage": "version through final payload byte", "check_123456789": 10673},
+  "result_validation": {"scored_modes":[1,4], "event_id_range":[1,65533], "question_range":[1,65533], "minimum_valid_points":10, "maximum_points":96, "short_result":"points < 10, score = 0, stars = 0", "counter_boundary":"deny the event on the same edge that would reach the resynchronisation limit"},
+  "messages": {
+    "HELLO": {"id":1,"direction":"A>B","length":0},
+    "SYNC": {"id":2,"direction":"B>A","length":0},
+    "SYNC_ACK": {"id":3,"direction":"A>B","length":0},
+    "SYNC_COMMIT": {"id":4,"direction":"B>A","length":0},
+    "FEATURE": {"id":16,"direction":"A>B","length":9,"payload":[["child_pitch_q4",2],["child_level",1],["flags",1],["teacher_pitch_q4",2],["teacher_level",1],["reserved",2]],"flags":{"0":"child_voiced","1":"teacher_voiced","2":"teacher_preference"}},
+    "STATUS": {"id":17,"direction":"B>A","length":6,"payload":[["mode",1],["phase",1],["target",1],["question_index",1],["difficulty",1],["flags",1]],"flags":{"0":"actual_teacher_used","1":"summary","2":"waiting_for_this_question_teacher"}},
+    "DEMO_REQUEST": {"id":32,"direction":"B>A","length":0},
+    "DEMO_ARMED": {"id":33,"direction":"A>B","length":0},
+    "DEMO_CONTOUR": {"id":34,"direction":"A>B","length":19,"payload":[["point_count",1],["mean_q4",2],["signed_offset_bins",16]]},
+    "DEMO_CANCEL": {"id":35,"direction":"B>A","length":0},
+    "RESULT": {"id":48,"direction":"B>A","length":27,"payload":[["event_id",2],["mode",1],["target",1],["flags",1],["score",1],["stars",1],["point_count",1],["hint",1],["mean_q4",2],["signed_offset_bins",16]],"flags":{"0":"too_short","1":"actual_teacher_used","2":"recognition_valid (always zero in PRODUCT)"}},
+    "RESULT_ACK": {"id":49,"direction":"A>B","length":2,"payload":[["event_id",2]]}
+  },
+  "lifecycle": {"coordinator":"B","link_timeout_ms":750,"control_retry_ms":100,"teacher_wait_ms":8000,"startup_quiet_ms":20,"counter_limit":65534,"rx_commit":"all fields commit once after version, length and CRC validation","tx_snapshot":"entire immutable frame captured at send acceptance","restart":"HELLO or timeout invalidates in-flight question/result; fresh SYNC/ACK/COMMIT; no offline result replay","result_semantics":"at-most-once within a live session, ACK/retry; no exactly-once persistence across power loss","question":"increment for each demo request and cancellation, not four-tone index","sequence":"strictly forward modulo16bit within session; reset with handshake; resync before wrap","fresh_demo":"request clears capture; arm; wait silence then fresh voiced onset; matching session/question only; contour fits one atomic frame so chunk reordering cannot create partial contours"}
+}
