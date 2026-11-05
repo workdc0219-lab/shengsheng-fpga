@@ -2,8 +2,6 @@
 
 **单麦采声 · 师生双板协同 · 声音驱动的训练交互**
 
-**[观看 / 下载完整实机演示（4分01秒，MP4）](https://github.com/workdc0219-lab/shengsheng-fpga/releases/download/showcase-20261105/shengsheng-demo.mp4)** · [录像说明与片段索引](docs/VIDEO.md)
-
 面向听障儿童的发声练习场景，把声音的高低、强弱和持续时间转成可以观察的画面反馈。教师示范、孩子跟读，两块安路 EG4S20 FPGA 分别呈现声音曲线与训练游戏，让一次练习有目标、有反馈，也有可共同观察的记录。
 
 ![声调爬山运行实拍：左侧学生游戏、右侧教师曲线，下方为双 FPGA 与共享麦克风](docs/assets/training-live.jpg)
